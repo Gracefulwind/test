@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="SpannableTextView">
+        <attr name="iconSrc" format="reference" />
+        <attr name="expandLines" format="integer|enum" >
+
+            <enum name="unlimited" value="2147483646"></enum>
+        </attr>
+        <attr name="expand" format="boolean" />
+        <attr name="canExpand" format="boolean" />
+        <attr name="text" format="string" />
+        <attr name="textColor" format="color|reference" />
+        <attr name="textSize" format="dimension" />
+        <!--这里dimension属性带match和wrap可以加enum也可以不加。-->
+        <!--但是在代码里获取属性必须要用getLayoutDimension，否则m和w只能用getInt读，dimen只能用getDimen读，不建议"否则"-->
+        <attr name="IconWidth" format="dimension" >
+            <enum name="match_parent" value="-1" />
+            <enum name="wrap_content" value="-2" />
+        </attr>
+        <attr name="IconHeight" format="dimension" >
+            <enum name="match_parent" value="-1" />
+            <enum name="wrap_content" value="-2" />
+        </attr>
+        <attr name="IconMarginTop" format="dimension" />
+        <attr name="IconMarginRight" format="dimension" />
+        <attr name="IconMarginLeft" format="dimension" />
+
+
+        <attr name="test1" format="boolean" />
+        <attr name="test2" format="dimension" />
+    </declare-styleable>
+
+</resources>
